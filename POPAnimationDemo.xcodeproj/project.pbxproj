@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0326D71EC3625300EB374A /* ADJUserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0326D61EC3625300EB374A /* ADJUserRegisterViewController.m */; };
+		2D0326D91EC3629C00EB374A /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0326D81EC3629C00EB374A /* Register.storyboard */; };
 		2D9DE2201EB083B000D0BA18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9DE21F1EB083B000D0BA18 /* main.m */; };
 		2D9DE2231EB083B000D0BA18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9DE2221EB083B000D0BA18 /* AppDelegate.m */; };
 		2D9DE2261EB083B000D0BA18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9DE2251EB083B000D0BA18 /* ViewController.m */; };
@@ -43,6 +45,9 @@
 /* Begin PBXFileReference section */
 		098BDDA10DC8E527DFD3FB55 /* Pods-POPAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPAnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-POPAnimationDemo/Pods-POPAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		172ED592F6C95496C545EA33 /* Pods-POPAnimationDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPAnimationDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-POPAnimationDemoTests/Pods-POPAnimationDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D0326D51EC3625300EB374A /* ADJUserRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADJUserRegisterViewController.h; sourceTree = "<group>"; };
+		2D0326D61EC3625300EB374A /* ADJUserRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADJUserRegisterViewController.m; sourceTree = "<group>"; };
+		2D0326D81EC3629C00EB374A /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		2D9DE21B1EB083B000D0BA18 /* POPAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POPAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9DE21F1EB083B000D0BA18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D9DE2211EB083B000D0BA18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -189,6 +194,9 @@
 		2D9DE2531EB0850800D0BA18 /* RegisterController */ = {
 			isa = PBXGroup;
 			children = (
+				2D0326D51EC3625300EB374A /* ADJUserRegisterViewController.h */,
+				2D0326D61EC3625300EB374A /* ADJUserRegisterViewController.m */,
+				2D0326D81EC3629C00EB374A /* Register.storyboard */,
 			);
 			path = RegisterController;
 			sourceTree = "<group>";
@@ -347,6 +355,7 @@
 				2D9DE22E1EB083B000D0BA18 /* LaunchScreen.storyboard in Resources */,
 				2D9DE22B1EB083B000D0BA18 /* Assets.xcassets in Resources */,
 				2D9DE2291EB083B000D0BA18 /* Main.storyboard in Resources */,
+				2D0326D91EC3629C00EB374A /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0326D71EC3625300EB374A /* ADJUserRegisterViewController.m in Sources */,
 				2D9DE2261EB083B000D0BA18 /* ViewController.m in Sources */,
 				2D9DE2231EB083B000D0BA18 /* AppDelegate.m in Sources */,
 				2D9DE25B1EB0874400D0BA18 /* ADJLoginViewController.m in Sources */,
