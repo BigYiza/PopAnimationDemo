@@ -128,3 +128,8 @@ Layer系：
 
 * 最后我们使用 `pop_addAnimation ` 来让动画开始生效，如果你想删除动画的话，那么你需要调用 `pop_removeAllAnimations`。 与 iOS 自带的动画不同，如果你在动画的执行过程中删除了物体的动画，那么物体会停在动画状态的最后一个瞬间，而不是闪回开始前的状态；
 * Pop Animation应用于CALayer时，在动画运行的任何时刻，layer`和其presentationLayer的相关属性值始终保持一致，而Core Animation做不到
+
+
+##使用中踩过的雷区
+* 如果期望试图始终保持动画后的试图状态，那么请不要对该试图或其父仕途进行任何试图元素上的增删，此类操作会导致使用过PopAnimation的试图无法保持动画的终了状态。
+* 位置类的Animation，类似X/Y的toValue赋值，是相对于父试图的坐标，而且，其坐标是被操作试图的中心。
