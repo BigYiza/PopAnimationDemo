@@ -77,7 +77,14 @@ Layer系：
 	basicAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
 	[self.ZView pop_addAnimation: basicAnimation forKey:@"basicAnimation"];
 ```
-此处需要说明的：
+对timingFunction的设置也可以使用另外一种方法
+
+```
+	POPBasicAnimation *offscreenAnimation = [POPBasicAnimation easeInAnimation];
+	offscreenAnimation.property = [POPAnimatableProperty propertyWithName:kPOPLayerPositionX];
+	...
+```
+此处需要说明的：p
 `- (void)pop_addAnimation:(POPAnimation *)anim forKey:(NSString *)key`方法中Key的赋值，保证在动画载体中Key的唯一性即可；
 
 ###2. PopSpringAnimation
