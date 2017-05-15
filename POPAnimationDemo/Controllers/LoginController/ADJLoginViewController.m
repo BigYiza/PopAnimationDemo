@@ -9,6 +9,7 @@
 #import "ADJLoginViewController.h"
 #import "UIColor+ACIHex.h"
 #import "POP.h"
+#import "ADJUserRegisterViewController.h"
 
 typedef NS_ENUM(NSInteger, ADJChangeType) {
 
@@ -124,6 +125,10 @@ static CGSize logoImageSize;
 
 - (IBAction)goRegistAccount:(UIButton *)sender {
     
+    UIStoryboard *stroyBoard = [UIStoryboard storyboardWithName:@"Register" bundle:nil];
+    UINavigationController *registerViewControllerNav = [stroyBoard instantiateViewControllerWithIdentifier:@"registerViewControllerNav"];
+    [self presentViewController:registerViewControllerNav animated:YES completion:nil];
+
 }
 
 #pragma mark- private method

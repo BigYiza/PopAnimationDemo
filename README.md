@@ -98,7 +98,15 @@ Layer系：
     };
     [self.ZView.layer pop_addAnimation: springAnimation forKey:@"springAnimation"];
 ```
-如果对PopSpringAnimation动画的velocity属性赋值，会发生“奇妙”的动画影响，因为我还没有找到规律😂有了解的朋友可以留言讨论一下。
+如果你想让视图在原地抖动，产生吸引用户的效果，那么给velocity属性一个初值，并设置其弹簧洗漱  类似下面这样：
+
+```
+POPSpringAnimation *positionAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
+    positionAnimation.beginTime = CACurrentMediaTime() + 0.1;
+    positionAnimation.velocity = @2000;
+    positionAnimation.springBounciness = 20;
+```
+视图就会奇妙的一阵“抽搐”，随后这个动画将变得索然无味😎哈哈哈
 
 ###3. PopDecayAnimation
 > 基于Bezier曲线的timingFuntion同样无法表述Decay Aniamtion，所以Pop就单独实现了一个 PopDecayAnimation，用于衰减动画。
